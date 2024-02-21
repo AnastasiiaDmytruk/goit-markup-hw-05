@@ -633,6 +633,7 @@ transform: translate(-50%, -50%);
 padding: 72px 24px 24px 24px;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-close {
@@ -660,8 +661,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-svg {
-  width: 8;
-  height: 8p;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
  
 }
@@ -688,7 +687,7 @@ margin-bottom: 16px;
  
 }
 .modal-field {
-margin-bottom: 16px;
+margin-bottom: 8px;
 }
 
 .modal-lable {
@@ -766,6 +765,32 @@ margin-bottom: 24px;
   clip: rect(1px, 1px, 1px, 1px); */
 }
 
+.checkbox-label {
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+}
+
+.checkbox-span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: inline-flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
+}
+
+.checkbox-svg {
+ 
+}
+
+.checkbox-link {
+  color: #4D5AE5;
+
+}
 
 .send-btn {
   padding: 16px 32px;

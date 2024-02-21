@@ -456,9 +456,9 @@
         <div class="subscribe">
           <p class="subscribe-text">Subscribe</p>
           <form class="footer-form-btn">
-            <label for="footer-email-form">
+            <label for="footer-email-form" class="foter-label">
               <input class="footer-email-form" type="email" 
-               id="footer-email-form" placeholder="E-mail">
+               id="footer-email-form" placeholder="E-mail" name="footer-email-form">
             </label>
         <button class="footer-btn" type="submit">Subscribe
           <svg class="footer-btn-svg" height="24" width="24">
@@ -472,7 +472,7 @@
     <div class="overlay">
       <div class="modal">
         <button type="button" class="modal-close">
-          <svg class="modal-close-svg">
+          <svg class="modal-close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close-2"></use>
           </svg>
         </button>
@@ -511,7 +511,12 @@
         </div>
         <div class="modal-checkbox-wrap">
           <input class="visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true">
-          <p class="modal-lable accept">I accept the terms and conditions of the <button class="accept-link" href="index.html">Privacy Policy</a></p>
+          <label class="checkbox-label" for="user-privacy">I accept the terms and conditions of the <span class="checkbox-span">
+            <svg class="checkbox-svg" width="10" height="8" >
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+            <a class="checkbox-link" href="">Privacy Policy</a></span></label>
+          
        </div>
         </form>
       
