@@ -657,6 +657,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-close:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffff;
 
 }
 
@@ -664,11 +665,11 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
  
 }
-
+/* 
 .modal-close-svg:hover,
 .modal-close-svg:focus {
-fill: #ffff;
-}
+
+} */
 
 
 .modal-title {
@@ -688,6 +689,10 @@ margin-bottom: 16px;
 }
 .modal-field {
 margin-bottom: 8px;
+}
+
+.modal-field-textarea {
+  margin-bottom: 16px;
 }
 
 .modal-lable {
@@ -732,6 +737,11 @@ fill: #4D5AE5;
   stroke:#2E2F42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+/* 
+.modal-icon:hover,
+.modal-icon:focus,{
+  fill: #4D5AE5;
+} */
 
 .modal-textarea {
 width: 100%;
@@ -758,18 +768,27 @@ margin-bottom: 24px;
 }
 
 .visually-hidden {
-  /* position: absolute !important;
+  position: absolute !important;
   height: 1px; width: 1px;
   overflow: hidden;
   clip: rect(1px 1px 1px 1px); 
-  clip: rect(1px, 1px, 1px, 1px); */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
-.checkbox-label {
+.form-check:checked + .checkbox-text .checkbox-span  {
+  background-color: #404bbf;
+  border: none;
+  fill: ;
+}
+
+.checkbox-text {
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
+display: flex;
+align-items: center;
+
 }
 
 .checkbox-span {
@@ -781,6 +800,8 @@ display: inline-flex;
 align-items: center;
 justify-content: center;
 fill: transparent;
+border-radius: 2px;
+margin-right: 8px;
 }
 
 .checkbox-svg {
@@ -788,16 +809,28 @@ fill: transparent;
 }
 
 .checkbox-link {
+  text-decoration: underline;
   color: #4D5AE5;
 
 }
 
 .send-btn {
+  min-width: 169px;
+  height: 56px;
   padding: 16px 32px;
   border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
   background-color: #4D5AE5;
   color: #fff;
   border: none;
+  display: block;
+  margin-left: 96px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .accept {
