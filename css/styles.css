@@ -778,7 +778,7 @@ margin-bottom: 24px;
 .form-check:checked + .checkbox-text .checkbox-span  {
   background-color: #404bbf;
   border: none;
-  fill: ;
+  fill: #F4F4FD;;
 }
 
 .checkbox-text {
@@ -786,7 +786,7 @@ font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
-display: flex;
+display: inline-flex;
 align-items: center;
 
 }
